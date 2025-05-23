@@ -1,0 +1,123 @@
+{
+  "version": 1,
+  "author": "Anonymous maker",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "wokwi-breadboard", "id": "bb1", "top": 45, "left": 358, "attrs": {} },
+    { "type": "wokwi-arduino-uno", "id": "uno", "top": 403.8, "left": 57, "attrs": {} },
+    {
+      "type": "wokwi-buzzer",
+      "id": "bz1",
+      "top": 79.2,
+      "left": 577.8,
+      "attrs": { "volume": "0.1" }
+    },
+    {
+      "type": "wokwi-dht22",
+      "id": "dht1",
+      "top": 48.3,
+      "left": 513,
+      "attrs": { "temperature": "12.4", "humidity": "70" }
+    },
+    {
+      "type": "wokwi-photoresistor-sensor",
+      "id": "ldr1",
+      "top": 47.7,
+      "left": 388.1,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-lcd1602",
+      "id": "lcd1",
+      "top": -166.4,
+      "left": 168.8,
+      "attrs": { "pins": "i2c" }
+    },
+    { "type": "wokwi-ds1307", "id": "rtc1", "top": 637.8, "left": 710.5, "attrs": {} },
+    {
+      "type": "wokwi-rgb-led",
+      "id": "rgb1",
+      "top": 71.2,
+      "left": 865.1,
+      "attrs": { "common": "cathode" }
+    },
+    { "type": "wokwi-analog-joystick", "id": "joystick1", "top": -87, "left": 677.4, "attrs": {} },
+    {
+      "type": "wokwi-resistor",
+      "id": "r1",
+      "top": 158.4,
+      "left": 844.25,
+      "rotate": 90,
+      "attrs": { "value": "200" }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "r2",
+      "top": 158.4,
+      "left": 863.45,
+      "rotate": 90,
+      "attrs": { "value": "200" }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "r3",
+      "top": 158.4,
+      "left": 873.05,
+      "rotate": 90,
+      "attrs": { "value": "200" }
+    }
+  ],
+  "connections": [
+    [ "uno:GND.2", "bb1:bn.1", "black", [ "v38.3", "h13.5" ] ],
+    [ "uno:5V", "bb1:bp.2", "red", [ "v47.9", "h195.8" ] ],
+    [ "uno:A4.2", "lcd1:SDA", "green", [ "v0" ] ],
+    [ "uno:A5.2", "lcd1:SCL", "green", [ "v0" ] ],
+    [ "uno:A5", "rtc1:SCL", "green", [ "v0" ] ],
+    [ "uno:A4", "rtc1:SDA", "green", [ "v0" ] ],
+    [ "bb1:bn.43", "bb1:53t.e", "black", [ "v0" ] ],
+    [ "uno:GND.1", "bb1:tn.1", "black", [ "v0" ] ],
+    [ "bb1:52b.j", "uno:11", "#8f4814", [ "v67.2", "h-38.4" ] ],
+    [ "bb1:54b.j", "uno:10", "#8f4814", [ "v76.8", "h-19.2" ] ],
+    [ "bb1:55b.j", "uno:9", "#8f4814", [ "v86.4", "h-28.8" ] ],
+    [ "uno:6", "bb1:25b.j", "orange", [ "v-28.8", "h358.9" ] ],
+    [ "bb1:12b.j", "bb1:bp.9", "red", [ "v0" ] ],
+    [ "bb1:9b.j", "uno:A3", "violet", [ "v422.4", "h-167.3" ] ],
+    [ "bb1:bp.50", "bb1:tp.50", "red", [ "v0" ] ],
+    [ "bb1:17b.j", "uno:5", "yellow", [ "v144", "h-268.8" ] ],
+    [ "bb1:16b.j", "bb1:bp.12", "red", [ "v0" ] ],
+    [ "bb1:19b.j", "bb1:bn.15", "black", [ "v0" ] ],
+    [ "bb1:tn.49", "lcd1:GND", "black", [ "v-249.7", "h-788", "v48" ] ],
+    [ "bb1:tp.48", "lcd1:VCC", "red", [ "v-249.3", "h-788", "v19.2" ] ],
+    [ "bb1:11b.j", "bb1:bn.8", "black", [ "v0" ] ],
+    [ "rtc1:GND", "bb1:bn.27", "black", [ "h0" ] ],
+    [ "rtc1:5V", "bb1:bp.26", "red", [ "h-28.8", "v-10" ] ],
+    [ "bb1:24b.j", "bb1:bn.19", "black", [ "v0" ] ],
+    [ "joystick1:HORZ", "uno:A2", "blue", [ "v508.8", "h-182.4" ] ],
+    [ "joystick1:VERT", "uno:A1", "blue", [ "v518.4", "h-441.6" ] ],
+    [ "joystick1:GND", "bb1:bn.31", "black", [ "v0" ] ],
+    [ "joystick1:VCC", "bb1:bp.28", "red", [ "v0" ] ],
+    [ "joystick1:SEL", "uno:4", "blue", [ "v364.8", "h-460.8" ] ],
+    [ "rgb1:R", "bb1:52t.c", "", [ "$bb" ] ],
+    [ "rgb1:COM", "bb1:53t.d", "", [ "$bb" ] ],
+    [ "rgb1:G", "bb1:54t.c", "", [ "$bb" ] ],
+    [ "rgb1:B", "bb1:55t.c", "", [ "$bb" ] ],
+    [ "r1:1", "bb1:52t.e", "", [ "$bb" ] ],
+    [ "r1:2", "bb1:52b.i", "", [ "$bb" ] ],
+    [ "r2:1", "bb1:54t.e", "", [ "$bb" ] ],
+    [ "r2:2", "bb1:54b.i", "", [ "$bb" ] ],
+    [ "r3:1", "bb1:55t.e", "", [ "$bb" ] ],
+    [ "r3:2", "bb1:55b.i", "", [ "$bb" ] ],
+    [ "ldr1:VCC", "bb1:12b.f", "", [ "$bb" ] ],
+    [ "ldr1:GND", "bb1:11b.f", "", [ "$bb" ] ],
+    [ "ldr1:DO", "bb1:10b.f", "", [ "$bb" ] ],
+    [ "ldr1:AO", "bb1:9b.f", "", [ "$bb" ] ],
+    [ "dht1:VCC", "bb1:16b.f", "", [ "$bb" ] ],
+    [ "dht1:SDA", "bb1:17b.f", "", [ "$bb" ] ],
+    [ "dht1:NC", "bb1:18b.f", "", [ "$bb" ] ],
+    [ "dht1:GND", "bb1:19b.f", "", [ "$bb" ] ],
+    [ "bz1:1", "bb1:24b.f", "", [ "$bb" ] ],
+    [ "bz1:2", "bb1:25b.f", "", [ "$bb" ] ]
+  ],
+  "dependencies": {}
+}
