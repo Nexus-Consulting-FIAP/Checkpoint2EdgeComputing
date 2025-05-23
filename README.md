@@ -106,4 +106,7 @@ Utiliza joystick analógico em um único pino para:
 
 ---
 
+## Circuito
+<img src="https://github.com/Nexus-Consulting-FIAP/Checkpoint2EdgeComputing/blob/main/circuito_arduino.jpg?raw=true">
+
 📍 Projeto criado para a **Vinheria Agnello**  
