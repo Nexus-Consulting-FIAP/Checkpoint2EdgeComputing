@@ -17,7 +17,7 @@ Pensando nisso, este dispositivo realiza um monitoramento ambiental completo, em
 -  Luminosidade do ambient
 
 Link para o Wokwi: https://wokwi.com/projects/431438950003733505
-Link para o vídeo: ADD DPS.
+Link para o vídeo: https://www.youtube.com/watch?v=VcGEGkCO9Vw
 
 ## 🎯 Objetivo
 
