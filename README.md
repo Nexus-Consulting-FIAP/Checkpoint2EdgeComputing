@@ -16,6 +16,9 @@ Pensando nisso, este dispositivo realiza um monitoramento ambiental completo, em
 -  Umidade relativa do ar
 -  Luminosidade do ambient
 
+Link para o Wokwi: https://wokwi.com/projects/431438950003733505
+Link para o vídeo: ADD DPS.
+
 ## 🎯 Objetivo
 
 Evitar variações ambientais que possam comprometer o armazenamento correto de vinhos, utilizando sensores, alertas e registros automáticos com precisão.
